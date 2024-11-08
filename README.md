@@ -58,3 +58,27 @@ terraform plan -out plan.out
 ```
 terraform apply plan.out
 ```
+> [!IMPORTANT]
+> Não esqueça de Destruir os recursos após a utilização utilizando o comando abaixo:
+> ```bash
+> terraform destroy
+> ``` 
+
+## Estrutura de Pastas
+-(Root)
+    | Exporacao
+        | arqs
+            | _Like a Prayer.docx - Arquivo para testarmos a LLM de tradução
+        | Explorer_tranlation_V1.ipynb - Notebook Python para exploração do Azure Translator
+        | Explorer_tranlation_V2.ipynb - Notebook Python para exploração da Open AI
+    | azure_ia_service.tf - Arquivo terraform para criar os serviços de IA da Azure
+    | locals.tf - Arquivo terraform com as tags comuns 
+    | main.tf - Arquivo terraform de Configuração do Provaider
+    | outputs.tf - Arquivo terraform para exibir as informações necessarias para o código ao final da criação dos recursos
+    | variables.tf - Arquivos teraform com as variaveis utilizadas no projeto
+
+## Próximos passos
+- Gerar um aplicativo que se comunique com a nossa infra estrutura e traduza e resuma textos de artigos
+
+
+
