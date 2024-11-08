@@ -38,3 +38,4 @@ terraform.rc
 
 .terraform.lock.hcl
 *.out
+*_pt-br_translate*
