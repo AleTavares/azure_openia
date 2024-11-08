@@ -5,7 +5,7 @@ resource "azurerm_resource_group" "resource_group" {
 }
 
 resource "azurerm_cognitive_account" "text_tranlator" {
-  depends_on = [ azurerm_resource_group.resource_group ]
+  depends_on          = [azurerm_resource_group.resource_group]
   name                = var.cognitive_name_Tranlation
   location            = azurerm_resource_group.resource_group.location
   resource_group_name = azurerm_resource_group.resource_group.name
@@ -14,7 +14,7 @@ resource "azurerm_cognitive_account" "text_tranlator" {
 }
 
 resource "azurerm_cognitive_account" "text_openia" {
-  depends_on = [ azurerm_resource_group.resource_group ]
+  depends_on          = [azurerm_resource_group.resource_group]
   name                = var.cognitive_name_OpenIA
   location            = azurerm_resource_group.resource_group.location
   resource_group_name = azurerm_resource_group.resource_group.name

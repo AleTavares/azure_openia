@@ -36,14 +36,14 @@ terraform init
 ```
 2. Criar o arquivo terraform.tfvars com as variaveis necessárias
 ```terraform
-location            = "East US" # Região onde vamos criar nossos recursos
-resource_group_name = "rg-tradutor" # Nome do Resource Group a ser criado
+location                  = "East US"         # Região onde vamos criar nossos recursos
+resource_group_name       = "rg-tradutor"     # Nome do Resource Group a ser criado
 cognitive_name_Tranlation = "tradutor_textos" # Nome que daremos ao nosso serviço tradutor do Translator
-skuTranlation = "F0" # Tabela de Valores
-kindTranlation = "TextTranslation" # Modelo a ser Utilizado
-cognitive_name_OpenIA = "tradutor_openia" # Nome que daremos ao nosso serviço da OpenIA
-skuOpenIA = "S0" # Tabela de Valores do Serviço
-kindOpenAI = "OpenAI" # Modelo a ser Utilizado
+skuTranlation             = "F0"              # Tabela de Valores
+kindTranlation            = "TextTranslation" # Modelo a ser Utilizado
+cognitive_name_OpenIA     = "tradutor_openia" # Nome que daremos ao nosso serviço da OpenIA
+skuOpenIA                 = "S0"              # Tabela de Valores do Serviço
+kindOpenAI                = "OpenAI"          # Modelo a ser Utilizado
 ```
 > [!NOTE]
 > Para o SKU escolha entre: B1, B2, D1, S0, S1, S2, S3, S4, S8, S9. 
